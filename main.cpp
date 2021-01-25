@@ -2,9 +2,10 @@
 #include<fstream>
 #include<string>
 using namespace std;
-int main()
+int main(int argc,char** argv)
 {
-	ifstream file("pro1.shwe");
+	//string first_arg(argv[1]);
+	ifstream file(argv[1]);
 	string str;
 	string filecontents;
 	while(getline(file,str))
